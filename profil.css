@@ -1,0 +1,50 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #444;
+    background: darkorange;
+}
+
+img{
+    height: 45%;
+    width: 15%;
+    margin-right: 10px;
+    
+}
+
+.table tr td:first-child{
+    font-weight: 800;
+}
+
+.table tr td{
+    padding: .25rem;
+}
+
+.photo{
+    border-radius: 1rem;
+}
+
+hr{
+    border: 1px solid #efefef;
+}
+
+.wrapper a{
+    color: white;
+    background: #444;
+    font-weight: 900;
+    font-size: 2vh;
+    padding: 0.8vh;
+    border-radius: 0.8vh;
+    margin: 0.8vh;
+    text-decoration: none;
+}
+
+.wrapper a:hover{
+    opacity: 0.5;
+}

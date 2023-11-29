@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background: url("https://images.pexels.com/photos/189537/pexels-photo-189537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color: white;
+    transform: translateY(-100%);
+    animation: movedown 850ms ease-in 2s forwards;
+}
+
+@keyframes movedown{
+    from {
+        transform: translateY(-100%);
+    }to {
+        transform: translateY(0%);
+    }
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.nabvbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.hero-tekt{
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide 2s ease-in-out;
+
+}
+
+@keyframes slide{
+    from{
+        transform: translate(-100%);
+    }to{
+        transform: translate(0%);
+    }
+}
+
+.hero-tekt::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    top: 0;
+    opacity: 0.6;
+}
+
+.hero-tekt a{
+    color: white;
+    background: #e1b12c;
+    font-weight: 900;
+    font-size: 2vh;
+    padding: 0.8vh;
+    border-radius: 0.8vh;
+    margin: 0.8vh;
+}
+
+.hero-tekt a:hover{
+    opacity: 0.6;
+}
+
+.hero-tekt h3{
+    font-size: 18vh;
+}
+
+.hero-tekt p{
+    font-size: 5vh;
+}
